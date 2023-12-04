@@ -25,6 +25,8 @@
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
+        a.addEventListener('mousedown', segurar)
+        a.addEventListener('mouseup', soltar)
 
         function clicar() {
             a.innerText = 'Clicou!'
@@ -38,6 +40,16 @@
         function sair() {
             a.innerText = 'Saiu!'
             a.style.background = 'green'
+        }
+
+        function segurar() {
+            a.innerText = 'Segurou!'
+            a.style.background = 'black'
+        }
+
+        function soltar() {
+            a.innerText = 'Soltou!'
+            a.style.background = 'grey'
         }
     </script>
 </body>

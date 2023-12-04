@@ -4,7 +4,11 @@ function carregar() {
     var atual = new Date()
     var hora = atual.getHours()
     msg.innerHTML = `Agora são ${hora} horas`
-    if (hora >= 0 && hora < 12) {
+    if (hora >= 0 && hora < 4) {
+        //boa madrugada
+        img.src = 'fotomadrugada.png'
+        document.body.style.background = '#1E292D'
+    } else if (hora >= 4 && hora < 12) {
         //bom dia
         img.src =  'fotomanha.png'
         document.body.style.background = '#FDB457'
@@ -31,4 +35,7 @@ function carregar() {
 #044D8C - noite
 #0669BF - noite
 #0A4995 - noite
+
+#333232 - madrugada
+#1E292D - madrugada
 */
