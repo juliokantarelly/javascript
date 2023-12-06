@@ -31,7 +31,7 @@ function verificar() {
             } else if (idade < 50) {
                 img.setAttribute('src', 'mulher-adulta.png')
             } else {
-                img.setAttribute('src', 'mulher-velha.png')  
+                img.setAttribute('src', 'mulher-velha.png')
             }
         }
     }
